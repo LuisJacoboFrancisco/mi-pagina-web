@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Currículum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para dispositivos móviles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+        body {
+            margin: 0;
+            background-color: #87CEFA;
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-template-rows: 20% 80%;
+            grid-template-areas:
+                "menu header"
+                "menu main";
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            grid-area: header;
+            background: #337aff;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-family: 'Orbitron', sans-serif;
+            color: #00ffff;
+            text-shadow:
+                0 0 5px #0ff,
+                0 0 10px #0ff,
+                0 0 20px #0ff,
+                0 0 40px #0ff;
+        }
+
+        nav {
+            grid-area: menu;
+            background: #3352ff;
+            padding: 30px;
+            color: white;
+        }
+
+        main {
+            grid-area: main;
+            padding: 20px;
+            background: #f0f8ff;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                display: block;
+            }
+
+            nav, header, main {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h2>Más cosas sobre mi</h2>
+    <h3>
+    <ul>
+        <li><a href="https://www.bing.com/?pc=U316&form=CHROMN">Quien soy?</a></li>
+        <li><a href="#">Cuales son mis deportes favoritos</a></li>
+        <li><a href="#">Aptitudes</a></li>
+        <li><a href="#">Datos curiosos</a></li>
+    </ul>
+    <h5>Esto ha sido todo amigoooos ;)</h5>
+    </h3>
+</nav>
+
+<header>
+    <h1>Emilio Javier Gomez Cruces</h1>
+</header>
+
+<main>
+    <h2>¿Quién soy?</h2>
+    <p>Mi nombre completo es Emilio Javier Gómez Cruces.</p>
+    <p>Por medio de esta página web les contaré un poco de mí. Con ayuda de la barra lateral y los links podrán conocerme.</p>
+    
+    <!-- Imagen alojada en línea -->
+    <img src="https://scontent.fmex3-3.fna.fbcdn.net/v/t39.30808-6/502528546_1220465953122078_3553508447949853487_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=uXz9LX0y53gQ7kNvwF4a4-V&_nc_oc=Adn35zXgQ8jeX9V03yhxx4iP5F_RosNbQzvpYAeVlz0x5_TaKfwbQVY2kpJj8Pth0kc&_nc_zt=23&_nc_ht=scontent.fmex3-3.fna&_nc_gid=Oz78v5Qw2IGKdwjJ78hfgQ&oh=00_AfK66pAgw-YOEcDM8wSATWDrxpbgbuLVrdEoauymiVT0Ow&oe=6842FE2F" alt="Este soy yo">
+</main>
+
+</body>
+</html>
